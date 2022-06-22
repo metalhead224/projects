@@ -1,72 +1,246 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Suman Osti</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="icon" href="suman.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <body>
+<html>
 
-    <div class="top-container">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TinDog</title>
 
-      <img class="top-cloud" src="images/cloud.png" alt="cloud">
-      <h1>I'm Suman.</h1>
-      <h2>a <span class="pro">pro</span>grammer.</h2>
-      <img class="btm-cloud" src="images/cloud.png" alt="cloud">
-      <img src="images/mountain.png" alt="mountain">
+
+
+  <!--bootstrap style sheet link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <!--my style sheet-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <!-- font awesome kit -->
+  <script src="https://kit.fontawesome.com/d7003f7c9a.js" crossorigin="anonymous"></script>
+
+   <!--bootstrap javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <section id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-edited">
+
+          <a href="#" class="navbar-brand">tindog</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                  <li class="navbar-item">
+                      <a class="nav-link" href="#footer">Contact</a>
+                  </li>
+                  <li class="navbar-item">
+                      <a class="nav-link" href="#pricing">Pricing</a>
+                  </li>
+                  <li class="navbar-item">
+                      <a class="nav-link" href="#cta">Download</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        
+
+
+
+    <!-- Title -->
+
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <!-- here custom class has been added as btn-download to little customize the buttons -->
+          <button type="button" class="btn btn-dark btn-lg btn-download" ><i class="fa-brands fa-apple"> Download</i></button>
+          <button type="button" class="btn btn-outline-light btn-lg btn-download"><i class="fa-brands fa-google-play"> Download</i></button>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="images/iphone6.png" alt="iphone-mockup" class="phone-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <div class="row">
+      <div class="feature-box col-lg-4 col-md-12">
+        <i class="f-icon fa-solid fa-circle-check fa-4x"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+
+      <div class="feature-box col-lg-4 col-md-12">
+        <i class="f-icon fa-solid fa-bullseye fa-4x"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+
+      <div class="feature-box col-lg-4 col-md-12">
+        <i class="f-icon fa-solid fa-heart fa-4x"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
 
     </div>
+  </section>
 
-    <div class="middle-container">
-      <div class="profile">
-        <img class="pp" src="images/suman.png" alt="suman's photo">
-        <h2 class="hi-text">Hi.</h2>
-        <p class="intro">I am a developer based on kathmandu, Nepal. I have a passion to develop web applications and i really love doing those.</p>
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+            <img class="testimonial-img" src="images/dog-img.jpg" alt="dog-profile">
+            <em>Pebbles, New York</em>
+          </div>
+
+          <div class="carousel-item">
+            <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+            <img class="testimonial-img" src="images/lady-img.jpg" alt="lady-profile">
+            <em>Beverly, Illinois</em>
+          </div>
+
+          <button data-bs-target="#testimonial-carousel" class="carousel-control-prev" type="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+
+          <button data-bs-target="#testimonial-carousel" class="carousel-control-next" type="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
       </div>
-      <hr>
-
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="cimg" src="images/computer.png" alt="suman's archive">
-          <h3>Technology to create</h3>
-          <p>I am a MERN stack developer. As a full stack developer I can be the person that all you need.
-          I do reasearch and find the best way to help the deliverables get more engagement.
-          I ought to find the best that the technology can provide.</p>
-        </div>
-
-        <div class="skill-row">
-          <img class="travel" src="images/travel.png" alt="travel image">
-          <h3>Quality deliverables</h3>
-          <p>Quality products are the key to success. I always emphasize on delivering quality products.
-            I am in a contionous pursuit of learning as i develop programs.
-            Always trying to figure out best technologies to build the best.</p>
-        </div>
-      </div>
-
-      <hr>
-        <div class="contact-me">
-          <img class="img3" src="images/hand-shake.png" alt="handshake photo">
-          <h2>Get In Touch</h2>
-          <h3>Mail for hiring</h3>
-          <p class="bot-text">I am always ready to do the web works, press the button to mail me your requirements, i will get back to you soon.</p>
-          <a class="btn" href="mailto:suman.osti401@gmail.com">CONTACT ME</a>
-        </div>
-      </div>
-
-      <div class="bottom-container">
-        <a class="footer-link" href="https://np.linkedin.com/in/suman-osti-811a8620a?original_referer=https%3A%2F%2Fwww.google.com%2F">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/osti_suman?lang=en">Twitter</a>
-        <a class="footer-link" href="https://www.laskarfoods.com">Website</a>
-        <p class="copyright">© suman osti @ 2022.</p>
-      </div>
-
     </div>
-  </body>
+
+
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo"src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo"src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo"src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo"src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+
+      <div class="pricing-col col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn card-btn col-12 btn-lg btn-outline-dark">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-col col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn card-btn col-12 btn-lg btn-dark">Sign Up</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pricing-col col-lg-4 col-md-12">
+        <div class="card">
+            <div class="card-header">
+              <h3>Mastiff</h3>
+            </div>
+
+            <div class="card-body">
+              <h2>$99 / mo</h2>
+              <p>Pirority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <button type="button" class="btn card-btn col-12 btn-lg btn-dark">Sign Up</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-text">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-lg btn-light"><i class="fa-brands fa-apple"> Download</i></button>
+    <button type="button" class="btn btn-lg btn-dark"><i class="fa-brands fa-google-play"> Download</i></button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+        <a href="https://www.facebook.com/suman.osti.3" target="_blank"><i class="social-icons fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/osti_suman?lang=en" target="_blank"><i class="social-icons fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/exploring_spirituality/?hl=en" target="_blank"><i class="social-icons fa-brands fa-instagram"></i></a>
+        <a href="mailto:suman.osti401@gmail.com"><i class="social-icons fa-solid fa-envelope"></i></a>
+
+        <p>© Copyright TinDog @suman_osti 2022</p>
+
+  </footer>
+
+
+</body>
+
 </html>

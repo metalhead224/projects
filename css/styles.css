@@ -1,171 +1,203 @@
 
+
+
 body{
-  margin: 0;
-  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* title texts */
+
+h1, h2, h3{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 h1{
-  color: #66BFBF;
-  font-family: 'Sacramento', cursive, sans-serif;
-  font-size: 80px;
-  margin: 50px auto 0 auto;
+  font-size: 3rem;
+  line-height: 1.5;
 }
+
+/* testimonial text */
 
 h2{
-  color: #66BFBF;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
+  line-height: 1.5;
 }
+
 
 h3{
-  color: #11999E;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-
-a{
-  color: #11999E;
-}
-
-a:hover{
-  color:white;
+  font-size: 1.25rem;
 }
 
 p{
-  color: #40514E;
-  font-family: 'Montserrat', sans-serif;
+  color: grey;
+}
+
+/* title part */
+#title{
+  background-color: #4C3A51;
+  color: #fff;
+}
+
+/* container part */
+.container-fluid{
+  padding: 2% 15% 7%;
+}
+
+/* navigation bar */
+.navbar-brand{
+  font-size: 3rem;
+  font-family: "Ubuntu";
   font-weight: bold;
-  line-height: 2;
 }
 
-hr{
-  border-style: none;
-  border: dotted 10px;
-  border-bottom: none;
-  color: #EAF6F6;
-  margin: 100px auto;
-  width: 7%;
+.navbar-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-weight: 300;
+}
+
+.navbar-edited{
+  padding:0 0 4.5rem;
+}
+
+/*download buttons */
+.btn-download{
+  margin:3rem 1rem 0;
 }
 
 
-.top-container{
-  background-color: #D3EBCD;
+
+/* title img styling */
+.phone-img{
+  margin-top: 2rem;
+  transform: rotate(25deg);
+  height: 70%;
+  width: 17%;
+  position: absolute;
+  right: 23%;
+}
+
+/* done position: absolute;because to stack features section on top of the image, what this will
+                    do is that it will take out photo from the html flow.    */
+
+/* features section */
+#features{
+  background-color: white;
+  padding: 7% 15%;            /* haven't used z-index numbers to stack these because while one is absolute and other is */
+  position: relative;                     /*     relative they automatically go on top of eachothers. */
+}
+
+.feature-box{
+  text-align: center;
+  padding: 5%;
+}
+
+.f-icon{
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.f-icon:hover{
+  color: #ff4c68;
+}
+
+#testimonials{
+  background-color: #4C3A51;
+  color: #fff;
+  text-align: center;
+}
+
+/* carousel used to display testimonial */
+.carousel-item{
+  padding: 5% 15%;
+}
+
+.testimonial-img{
+  border-radius: 100%;
+  height: 10%;
+  width: 10%;
+}
+
+.testimonial-text{
+  font-family: "Montserrat",sans-serif;
+  font-weight: bold;
+  line-height: 3rem;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 3.5rem;
+}
+
+#press{
+  background-color: #4C3A51;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.press-logo{
+  width: 10%;
+  margin: 2%;
+}
+
+#pricing{
+  margin: 10% 10%;
+  text-align: center;
+}
+
+.pricing-col{
+  padding: 3% 2%;
+}
+
+.card-btn{
   position: relative;
-  padding-top: 100px;
+  right: 1rem;
 }
 
-.pp{
-  height: 200px;
-  width: 200px;
-  margin-top: 50px;
+#cta{
+  background-color: #4C3A51;
+  text-align: center;
+  padding: 5rem;
 }
 
-.hi-text{
-  margin-bottom: 50px;
-}
+/* cta section */
 
-.pro{
-  text-decoration: underline;
-}
-
-.intro{
+.cta-text{
+  color: #fff;
   width: 30%;
-  margin : auto;
-}
-
-.top-cloud{
-  position: absolute;
-  top: 100px;
-  right: 450px;
-}
-
-.btm-cloud{
-  position: absolute;
-  bottom: 400px;
-  left: 390px;
+  margin: auto auto 3rem;
+  line-height: 1.5;
+  font-size: 2rem;
 }
 
 
-.cimg{
-  width: 25%;
-  float: left;
-  margin-right: 20px;
+.btn{
+  margin: 1rem;
 }
 
-.img3{
-  height: 200px;
-  width: 200px;
-}
+/* footer section */
 
-.travel{
-  width: 25%;
-  float: right;
-  margin-left: 20px;
-}
-
-
-.skill-row{
-  margin: 100px auto;
-  width: 50%;
-  text-align: left;
-}
-
-.bottom-container{
-  background-color: #66BFBF;
-  padding: 75px;
-  margin: 100px 0 0 0;
-}
-
-.contact-me{
-  width: 40%;
-  margin: 50px auto 50px;
-}
-
-.footer-link{
-  color: #11999E;
-  padding: 50px ;
+#footer{
+  padding: 5% 10%;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
-  font-weight: bold;
+}
+.social-icons{
+  margin: 2% 1%;
 }
 
-.copyright{
-  color: #EAF6F6;
-  margin-top: 50px;
-  text-align: center;
-  font-size: 0.75rem;
-}
+@media screen and (max-width:1110px) {
+  .phone-img{
+    position: static;
+    transform: rotate(0);
+    height: auto;
+    width: auto;
+  }
 
-.bot-text{
-  margin-bottom: 50px;
-}
+  #title{
+    text-align: center;
+  }
 
-
-.btn {
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-  text-decoration: none;
+  .cta-text{
+    width: 70%;
+  }
 }
